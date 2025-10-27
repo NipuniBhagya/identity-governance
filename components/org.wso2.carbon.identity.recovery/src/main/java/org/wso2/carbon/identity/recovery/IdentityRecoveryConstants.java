@@ -178,6 +178,9 @@ public class IdentityRecoveryConstants {
 
     public static final String CORRELATION_ID_MDC = "Correlation-ID";
 
+    public static final String GIVENNAME_CLAIM = "http://wso2.org/claims/givenname";
+    public static final String LASTNAME_CLAIM = "http://wso2.org/claims/lastname";
+
     private IdentityRecoveryConstants() {
 
     }
@@ -277,6 +280,7 @@ public class IdentityRecoveryConstants {
         ERROR_CODE_ERROR_DELETING_RECOVERY_DATA("20061", "Error deleting user recovery data of the tenant: %s"),
         ERROR_CODE_ERROR_GETTING_CONNECTOR_CONFIG("20062", "Error while getting connector configurations"),
 
+        ERROR_CODE_INVALID_GIVEN_NAME_CLAIM("20067", "For security measures, < > ` \" characters are restricted"),
         ERROR_CODE_ERROR_RETRIVING_CLAIM("18004", "Error when retrieving the locale claim of user '%s' of '%s' domain."),
         ERROR_CODE_RECOVERY_DATA_NOT_FOUND_FOR_USER("18005", "Recovery data not found."),
         ERROR_CODE_FAILED_TO_LOCK_FUNCTIONALITY_FOR_USER("55001", "Server error occurred while locking functionality."),
